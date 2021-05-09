@@ -1,0 +1,15 @@
+---
+application:
+  name: "musicbot"
+  project: "Musicbot"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "musicbot"
+  version: "4.4"
+routers:
+- name: "main-musicbot"
+  routes:
+  - application_name: "musicbot"
+    paths:
+    - "/*"
